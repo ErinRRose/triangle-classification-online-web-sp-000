@@ -9,13 +9,13 @@ class Triangle
 
   def kind
     if @side_a > 0 && @side_b > 0 && @side_c > 0
-      then
+
       if @side_a == @side_b && @side_b == @side_c
-        :equilateral
+        return :equilateral
       elsif @side_a == @side_b || @side_b == @side_c || @side_a == @side_c
-        :isosceles
+        return :isosceles
       elsif @side_a + @side_b > @side_c || @side_a + @side_c > @side_b || @side_b + @side_c > @side_a
-        :scalene
+        return :scalene
       end
     end
     raise TriangleError
