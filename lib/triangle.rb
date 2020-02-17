@@ -15,7 +15,7 @@ class Triangle
     elsif @side_a + @side_b > @side_c || @side_a + @side_c > @side_b || @side_b + @side_c > @side_a
       :scalene
     end
-    
+
 
 
   end
